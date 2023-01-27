@@ -18,13 +18,17 @@
     &__description {
         padding-top: 6px;
         .divider {
-            margin-top: 0;
+            margin: 0;
         }
     }
     &__title {
         position: relative;
         padding-left: 12px;
+        color: $title-color;
         @include before_circle;
+    }
+    &__subtitle {
+        color: $subtitle-color;
     }
     &__text {
         margin-top: 20px;

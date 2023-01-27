@@ -11,3 +11,41 @@
         z-index: -1;
     }
 }
+
+@mixin before_small-circle {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background-color: $small-circle-color;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -7px;
+        z-index: -1;
+    }
+}
+
+@mixin vertical-line {
+    &:after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: calc(100% + 16px);
+        top: -16px;
+        left: 0;
+        background-color: $vertical-line-color;
+    }
+}
+
+@mixin horizontal-line {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 45px;
+        height: 1px;
+        background-color: $vertical-line-color;
+        top: 68px;
+    }
+}

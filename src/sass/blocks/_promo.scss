@@ -6,12 +6,14 @@
     &__title {
         width: 535px;
         margin-top: 10px;
+        color: $title-color;
     }
     &__subtitle {
         position: relative;
         padding-left: 10px;
         @include before_circle;
         z-index: 2;
+        color: $subtitle-color;
     }
     &__btns {
         margin-top: 25px;
