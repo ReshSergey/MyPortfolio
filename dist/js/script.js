@@ -1,5 +1,8 @@
 "use strict"
 
+/**
+ * Menu Hamburger
+ */
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
       closeElem = document.querySelector('.menu__close');
@@ -12,3 +15,13 @@ closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
+/**
+ * Skills Counter Progress Line
+ */
+
+const counters = document.querySelectorAll('.skills__progress-counter'),
+      lines = document.querySelectorAll('.skills__progress-bar span');
+
+counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+});
