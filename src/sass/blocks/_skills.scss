@@ -1,14 +1,5 @@
 .skills {
-    &__title {
-        position: relative;
-        padding-left: 12px;
-        color: $title-color;
-        top: 7px;
-        @include before_circle;
-        &:before {
-            top: -7px;
-        }
-    }
+    padding-top: 120px;
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(4, minmax(270px, auto));
