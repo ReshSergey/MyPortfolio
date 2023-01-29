@@ -1,0 +1,45 @@
+.price {
+    margin-top: 60px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 370px);
+        grid-template-rows: repeat(3, minmax(45px, auto));
+        grid-auto-rows: minmax(45px, auto);
+        row-gap: 15px;
+        justify-content: space-between;
+        padding: 0 60px;
+    }
+    &__item {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, minmax(22px, auto));
+        grid-auto-rows: minmax(22px, auto);
+        row-gap: 5px;
+        align-content:space-between;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        @include before_small-circle;
+        &:before {
+            top: 12px;
+            left: -25px;
+        }
+
+    }
+    &__type {
+        color: $price-title-color; 
+    }
+    &__money {
+        color: $price-money-color;
+        justify-self: end;
+    }
+    &__descr {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: $price-descr-color;
+        grid-column: 1 / 3;
+    }
+}
