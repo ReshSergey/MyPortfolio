@@ -44,4 +44,22 @@
             row-gap: 20px;;
         }
     }
+    .benefit {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            padding: 0;
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            margin-bottom: 40px;
+        }
+        &__progress {
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 40px;
+        }
+    }
 }

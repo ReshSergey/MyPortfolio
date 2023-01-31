@@ -16,4 +16,19 @@
             }
         }
     }
+    .benefit {
+        &__wrapper {
+            grid-template-columns: repeat(2,360px);
+            column-gap: 110px;
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(3,minmax(270px,auto));
+        }
+        &__progress {
+            grid-template-columns: repeat(3,300px);
+            column-gap: 30px;
+        }
+    }
 }
