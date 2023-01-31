@@ -1,0 +1,47 @@
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .title {
+        &_fz48 {
+            font-size: 26px;
+        }
+        &_fz36 {
+            font-size: 24px;
+        }
+    }
+    .promo {
+        background: url('../img/main_bg.jpg') no-repeat 60%/cover;
+        &__btns {
+            margin-top: 32px;
+        }
+    }
+    .hamburger {
+        right: 20px;
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            grid-template-rows: 340px auto auto;
+        }
+        &__description .divider {
+            margin-top: 15px;
+        }
+        &__subtitle {
+            margin-top: 20px;
+            line-height: 36px;
+        }
+        &__skills {
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;;
+        }
+    }
+}

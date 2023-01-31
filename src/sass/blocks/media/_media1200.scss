@@ -1,0 +1,19 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 400px 520px;
+            column-gap: 40px;
+        }
+        &__skills {
+            grid-template-columns: repeat(2,245px);
+            column-gap: 30px;
+            &-item {
+                grid-template-columns: 40px 190px;
+                column-gap: 15px;
+            }
+        }
+    }
+}
