@@ -2,6 +2,11 @@
     .container {
         max-width: 720px;
     }
+    .title {
+        &_fz36 {
+            line-height: 36px;
+        }
+    }
     .about {
         &__wrapper {
             grid-template-columns: 300px 380px;
@@ -28,11 +33,24 @@
     }
     .skills {
         &__wrapper {
-            grid-template-columns: repeat(2, minmax(270px, auto));
+            justify-content: center;
         }
         &__progress {
             grid-template-columns: repeat(2, 335px);
             column-gap: 50px;
+        }
+    }
+    .portfolio {
+        &__wrapper {
+            margin-top: 40px;
+        }
+    }
+    .price {
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: repeat(auto-fit, 320px);
+            justify-content: space-around;
+            row-gap: 25px;
         }
     }
 }

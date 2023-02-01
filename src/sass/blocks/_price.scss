@@ -1,6 +1,7 @@
 .price {
     margin-top: 60px;
     &__wrapper {
+        margin-top: 60px;
         display: grid;
         grid-template-columns: repeat(2, 370px);
         grid-template-rows: repeat(3, minmax(45px, auto));
@@ -21,10 +22,11 @@
         font-weight: 700;
         font-size: 14px;
         line-height: 21px;
+        padding-left: 25px;
         @include before_small-circle;
         &:before {
-            top: 12px;
-            left: -25px;
+            top: 8px;
+            left: 0;
         }
 
     }

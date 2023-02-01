@@ -24,11 +24,24 @@
     }
     .skills {
         &__wrapper {
-            grid-template-columns: repeat(3,minmax(270px,auto));
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: space-between;
         }
         &__progress {
             grid-template-columns: repeat(3,300px);
             column-gap: 30px;
+        }
+    }
+    .portfolio {
+        padding-top: 80px;
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            justify-content: space-around;
+            row-gap: 35px;
+            .horizontal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
         }
     }
 }

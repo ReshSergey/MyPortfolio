@@ -53,13 +53,22 @@
     }
     .skills {
         &__wrapper {
-            grid-template-columns: 1fr;
             margin-bottom: 40px;
         }
         &__progress {
             grid-template-columns: 1fr;
             column-gap: unset;
             row-gap: 40px;
+        }
+    }
+    .portfolio {
+        &__wrapper {
+            row-gap: 20px;
+        }
+    }
+    .price {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 295px);
         }
     }
 }

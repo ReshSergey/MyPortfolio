@@ -21,6 +21,14 @@
             margin-bottom: 15px;
         }
     }
+    &__title {
+        position: relative;
+        padding: 2px 0 0 13px;
+        @include before_circle;
+        &:before {
+            top: 3px;
+        }
+    }
     &__progress {
         display: grid;
         grid-template-columns: repeat(3, 350px);

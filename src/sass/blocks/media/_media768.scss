@@ -38,12 +38,18 @@
     }
     .skills {
         &__wrapper {
-            grid-template-columns: repeat(2,minmax(260px, auto));
+            justify-content: center;
             margin-bottom: 80px;
         }
         &__progress {
             grid-template-columns: repeat(2, 250px);
             column-gap: 30px;
+        }
+    }
+    .price {
+        margin-top: 40px;
+        &__wrapper {
+            margin-top: 20px;
         }
     }
 }
