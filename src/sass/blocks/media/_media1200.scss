@@ -46,11 +46,13 @@
     }
     .contacts {
         &__wrapper {
-            grid-template-columns: 300px 550px;
-            column-gap: unset;
+            padding: 0;
+            grid-template-columns: 300px 500px;
+            column-gap: 20px;
         }
         &__form {
             grid-template-columns: repeat(2, 260px);
+            grid-template: 45px 190px 45px / repeat(2, 250px);
         }
     }
 }
