@@ -52,4 +52,16 @@
             margin-top: 20px;
         }
     }
+    .contacts {
+        &__photo {
+            display: none;
+        }
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 1fr;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 250px);
+        }
+    }
 }

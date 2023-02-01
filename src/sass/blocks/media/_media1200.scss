@@ -44,4 +44,13 @@
             }
         }
     }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 300px 550px;
+            column-gap: unset;
+        }
+        &__form {
+            grid-template-columns: repeat(2, 260px);
+        }
+    }
 }
